@@ -1,9 +1,0 @@
-Create your files
-Open vs code and open folder
-Open the terminal
-Initialize the repository by typing "git init"
-Tell git about yourself,git config user.name "any name" OR git config user.email "your email"
-
-git status
-git add start.txt
-git commit -m "First instructions"
