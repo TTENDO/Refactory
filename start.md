@@ -21,3 +21,19 @@ Total 6 (delta 0), reused 0 (delta 0)
 To https://github.com/TTENDO/Refactory.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'refactory'.}
+
+
+Creating a branch
+1. `git branch develop` creates a new branch develop
+2. `git branch` displays the branches you have
+3. `git checkout develop` takes you to the develop branch 
+
+Committing in branches
+1. `git add` then  `git commit -m "message"`
+2. `git push origin develop` pushes to develop
+
+Merging work in the branches
+1. if yo in develop, `git checkout master`
+2. Moving code in develop into master
+   First make sure u r in the branch you want to merge into
+   then `git merge develop`  &&     `git push origin master`

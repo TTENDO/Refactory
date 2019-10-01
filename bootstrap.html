@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css" />
 
     <title>Hello, world!</title>
   </head>
@@ -38,15 +38,15 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="index.html">Intro</a>
           </li>
           <li class="nav-item">
             <a
-              class="nav-link disabled"
-              href="#"
+              class="nav-link"
+              href="css-intro.html"
               tabindex="-1"
               aria-disabled="true"
-              >Disabled</a
+              >Css Intro</a
             >
           </li>
         </ul>
@@ -64,19 +64,42 @@
       </div>
     </nav>
 
-    <div class="jumbotron">
-      <h1 class="display-4">Refactory!</h1>
-      <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
-      </p>
-      <hr class="my-4" />
-      <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
-      </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="css-intro.html">Css intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h1 class="display-4">Refactory!</h1>
+          <p class="lead">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+          <hr class="my-4" />
+          <p>
+            It uses utility classes for typography and spacing to space content out
+            within the larger container.
+          </p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+      </div>
     </div>
+
+   
 
     <div class="table">
       <!--"table" class means width is 100% && "table-dark" makes it dark.-->
@@ -95,11 +118,11 @@
           <td>Mirembe Kids</td>
         </tr>
         <tr>
-            <td>Grace</td>
-            <td>Namaganda</td>
-            <td>10</td>
-            <td>Alpha Junior School</td>
-          </tr>
+          <td>Grace</td>
+          <td>Namaganda</td>
+          <td>10</td>
+          <td>Alpha Junior School</td>
+        </tr>
       </table>
     </div>
 
