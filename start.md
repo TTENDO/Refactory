@@ -37,3 +37,22 @@ Merging work in the branches
 2. Moving code in develop into master
    First make sure u r in the branch you want to merge into
    then `git merge develop`  &&     `git push origin master`
+
+
+
+   wen sent a link(invite)
+   go to clone and download, copy link
+   create folder on your machine, open it in vscode
+   in the terminal, `git init`
+   `git remote add origin "paste link"`
+   `git fetch origin`
+
+   `git push  --all origin` => pushes all branches to git
+
+
+   adding changes from master
+   `git checkout "branch name"`
+   `git merge master`
+
+   
+
