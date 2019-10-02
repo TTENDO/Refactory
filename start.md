@@ -52,6 +52,7 @@ Merging work in the branches
 
    adding changes from master
    `git checkout "branch name"`
+   
    `git merge master`
 
    
