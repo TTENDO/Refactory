@@ -45,6 +45,17 @@ if (mark==='5'){
    console.log(9);
    console.log(10);
    console.log(11);*/
+
+   /* For loop
    for(x=1;x<101;x++){
        console.log(x);
+   }*/
+
+
+   //while loop
+   var x = 1;
+   while (x<=100){
+    console.log(x);
+    x++;
    }
+   

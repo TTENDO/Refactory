@@ -3,7 +3,7 @@ function addNums(){
     let a =30;b = 60; c = 100;
     let total = a + b + c;
     console.log("Total is \t"+total);
-    return total;
+    return total;//ends execution of function total
 }
 
 //multiplying addNums by 2
