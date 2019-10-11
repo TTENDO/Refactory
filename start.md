@@ -55,5 +55,40 @@ Merging work in the branches
    
    `git merge master`
 
+
+
+
+   INCLUDING
+   1.Create a folder called INCLUDE
+   2.Create a file nav.html
+   3.copy the section of  a nav bar and paste it in nav.html
+   4. paste `<include src="INCLUDE/nav.html"></include>`
+
+
+   Adding php
+   add "C://XAMPP/PHP"
+   GO to your working folder
+   choose git bash here
+   type    `php -v`
+   type  `php -S  localhost:9000`
+    localhost:9000 is what u paste into the browser.
+
+
+
+   Wamp with php >5.6
+   2.Set up an environment terminal 
+   wamp64-bin-php-  copy path
+   this pc-properties
+
+
+DEALING WITH MERGE CONFILICTS
+*git branch
+*`git pull origin master`=> shows u the conficts
+areas with conflicts r inside the <<<<<>>>>>
+inspect your code and choose what to keep
+remove what u dont want and delete the bottom line with >>>>>>
+do `git status`
+`git add .`
+`git commit`
    
 
