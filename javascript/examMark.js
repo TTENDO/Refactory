@@ -1,23 +1,25 @@
 //checking the greater test mark
-function checkTest(a,b){
-let c = (a>b)?a:b;
+function checkTest(test1,test2){
+let highTest = (test1>test2)?test1:test2;
 
-console.log(`We considered `+c+'\t' +`as the test mark`);
-return c;
+console.log(`We considered `+highTest+'\t' +`as the test mark`);
+return highTest;
 }
 
 //calculating final coursework mark by adding it with test
-function coursework(d){
-    let f = checkTest(70,50) + d;
-    let g = f*(40/100);
-    console.log(`Total coursework mark is \t`+g);
-    return g;
+function coursework(cw){
+    let addMarks = checkTest(70,50) + cw;
+    let avg = (addMarks/2);
+    let finalCw = avg*(40/100);
+    console.log(`Total coursework mark is \t`+finalCw);
+    return finalCw;
 }
 //calculating final mark
-function exam(h){
-    let i = (coursework(40) + h )*(60/100);
+function exam(exmMark){
     
-    console.log(`Final exam mark is ` +i);
+    let calcExam = exmMark*(60/100);
+    let exmFinal = coursework(40) + calcExam;
+    console.log(`Final exam mark is ` +exmFinal);
 }
 
 
