@@ -98,3 +98,27 @@ for (let a=0;a<=5;a++){
     var c = (a%2==0)?a:
     console.log(c)
 }
+
+
+//more loops
+//for loop
+for(var ab=0; ab = 5; ab++){
+    console.log(ab);
+}
+
+//while loop
+var ab=0
+while(ab<=5){
+    console.log(ab);
+    ab++;
+}
+
+//do while
+var ac=0;
+do{
+    console.log(ac);
+    ac++;
+}while(ac<=5);
+
+
+

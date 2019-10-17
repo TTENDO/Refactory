@@ -90,5 +90,39 @@ remove what u dont want and delete the bottom line with >>>>>>
 do `git status`
 `git add .`
 `git commit`
+
+///***ozzy git***///////
+using cmd
+open the cmd window
+dir shows you the folders
+ls shows you the folders
+dr /ah shows you hidden files
+`cd/` or `cd..` takes you to the root directory 
+cd. means stay where you are.
+
+
+
+mkdir foldername
+git init 
+git status
+go to the refactory cohort 3 repository in the browser
+copy the link 
+go to cmd git clone paste link
+type dir
+cd cohort-3
+go back to the root cd ..
+git add cohort-3/
+git commit -m "commit message"
+
+cd cohort-3
+nb: first pull before pushing
+git pull origin master
+git status
+git push -u origin master
+
+
+
+
+
    
 
