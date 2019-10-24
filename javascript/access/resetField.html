@@ -15,12 +15,14 @@
 
     <p id="log"></p>
     <script>
+        /*creating reset handler that will be trigerred after reset*/
         function logReset(event){
             log.textContent = `Form reset! time Stamp: ${event.timeStamp}`
         }
+        //accessing the dom elements and we set a listener to form tag
         const form = document.querySelector("form")
         const log = document.getElementById("log")
-        form.addEventListener("reset",logReset)
+        form.addEventListener("reset",logReset)//reset is an event and log reset is an event handler
     </script>
 </body>
 </html>

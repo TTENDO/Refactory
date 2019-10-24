@@ -12,15 +12,17 @@
         <p id="log"></p>
     </form>
     <script>
-    
+    /*creating a select handler*/
     function logselect(event){
-        const log = document.getElementById('log')
+        const log = document.getElementById('log')//accessing  an element idenified by an id
+        //
         const select = event.target.value.substring(event.selectionStart,event.target.selectionEnd)
         log.textContent = 'You selected:' +`${select}`
     }
        
         const input = document.querySelector('input');
         input.addEventListener('select',logselect)
+        const log2 = document.querySelector('#log')//using an id in the query selector
     
 
 
