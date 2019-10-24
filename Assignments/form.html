@@ -22,9 +22,10 @@
        var test1 =  document.getElementById('test1');
        var test2 =  document.getElementById('test2');
        var cw =  document.getElementById('courseWork');
+       var exam = document.getElementById('examMark')
      
 
-       if (name.value=='' && lname.value=='' && test1.value=='' && test2.value=='' && cw.value=='')
+       if (name.value=='' && lname.value=='' && test1.value=='' && test2.value=='' && cw.value=='' && exam.value=='')
        {
          alert('name should not be empty');
          name.style.border = '2px solid red';//redden the border of firstname element with missing value
@@ -33,9 +34,18 @@
          test1.style.border = '2px solid red';//if test1 is empty, redden the border
          test2.style.border = '2px solid red';//if test2 is empty, redden the border
          cw.style.border = '2px solid red';//if coursework is empty, redden the border
+         exam.style.border = '2px solid red';
 
        }
       }
+
+
+      /*----CALCULATING THE MARKS-----*/
+      /*var doneTest1 = prompt('Input marks for test 1')//prompting the user to enter their name
+      if(doneTest1!= null && doneTest1 !=""){
+          alert("Your name is: "+visitorName)
+      }else
+      alert("blank name......!")*/
 
     </script>
 </head>
