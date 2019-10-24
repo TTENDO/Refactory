@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marks</title>
+</head>
+<body>
+    <h1 style="color:red">Javascript feedback example</h1><hr>
+
+    <form action="">
+            <input type="number" value="Try to select me please">
+            <p id="log"></p>
+    </form>
+    <script type="text/javascript">
+        var test1 = prompt('Input marks for test1:')//prompting the user to enter their name
+        if(test1!= null && test1!=""){
+            alert("Test1 marks: "+test1)
+            const log = document.getElementById('log')//accessing  an element idenified by an id
+            //var a = `window.alert("Your name is: "+test1)`
+            var b = Number(prompt('Input marks for test1:'));
+            log.textContent = b;
+        }else
+        alert("blank name......!")
+
+        /*message = "Press Ok to continue"
+        math = 98
+        x = confirm(message)
+        if (x==true){
+            alert("You have clicked on the Ok button")
+        }
+        else{
+            alert("You have clicked on the cancel button")
+        }*/
+    </script>
+    
+</body>
+</html>
