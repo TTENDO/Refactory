@@ -7,32 +7,93 @@
     <title>Marks</title>
 </head>
 <body>
-    <h1 style="color:red">Javascript feedback example</h1><hr>
+    <h1 style="color:red">Student Marks</h1><hr>
 
     <form action="">
-            <input type="number" value="Try to select me please">
-            <p id="log"></p>
+            <label for="">Higher test:</label>
+            <input type="text" id="higherMark">
+            <label for=""> Final Coursework:</label>
+            <input type="text" id = "CW">
+            <label for="">Exam mark:</label>
+            <input type="text" id = "finalMark">
+            
     </form>
     <script type="text/javascript">
-        var test1 = prompt('Input marks for test1:')//prompting the user to enter their name
-        if(test1!= null && test1!=""){
-            alert("Test1 marks: "+test1)
-            const log = document.getElementById('log')//accessing  an element idenified by an id
-            //var a = `window.alert("Your name is: "+test1)`
-            var b = Number(prompt('Input marks for test1:'));
-            log.textContent = b;
-        }else
-        alert("blank name......!")
+    //prompting the user to enter their testOne marks
+        var testOne = prompt('Input marks for test1:')
+       //displaying testOne marks 
+        document.write(` Test 1 = ${testOne}`);
 
-        /*message = "Press Ok to continue"
-        math = 98
-        x = confirm(message)
-        if (x==true){
-            alert("You have clicked on the Ok button")
+        //prompting the user to enter test 2 marks
+
+        var testTwo = prompt('Imput marks for test2')
+        //dispalying testTwo marks
+
+        document.write(` Test 2 = ${testTwo}`)
+
+        //converting the value from the enter test-marks prompts to integers and assigning to a variable to be used throughout
+        var test1= parseInt(testOne)
+        var test2=parseInt(testTwo)
+
+        /*----function that checks for the higher test mark----*/
+        
+        function checkTest(test1,test2){
+           let highTest = (test1>test2)?test1:test2;
+            return highTest;
+            }
+
+           //placing the higher mark in an input field
+            var a = document.getElementById('higherMark')
+            a.value = checkTest(test1,test2)
+
+        //prompting user to enter coursework marks and storing the value to be output on the screen
+        var koswak = prompt('Enter coursework marks')
+
+        document.write(`\t` + `Coursework = ${koswak}`)
+
+        //converting the input coursework mark to an integer 
+        var CW = parseInt(koswak)
+
+        /*-----Calculating the final coursework mark by adding coursework marks to higher test mark, divide by two
+            and then multiplying by 40%-------*/
+         function coursework(test1,test2,cw){
+            let addMarks = (checkTest(test1,test2) + cw);
+            let avg = (addMarks/2);
+            let finalCw = avg*(40/100);
+            return finalCw;
         }
-        else{
-            alert("You have clicked on the cancel button")
-        }*/
+       
+        // accessing the element with ID "cw"
+        var b = document.getElementById('CW')
+        //assigning the value from the function coursework to the input field
+        b.value = coursework(test1,test2,CW)
+
+
+        //prompting to get an exam mark which is output 
+        var exm = prompt('Enter exam marks')
+
+        document.write(`\t` + `Exam = ${exm}`)
+
+        //converting the input exam mark to an integer 
+        var finalExam = parseInt(exm)
+
+        /*------Function that calculates the final mark by first multiplying the provided exam mark
+                by 60% and then add the final coursework mark -------*/
+
+        function EXAM(test1,test2,cw,exmMark){
+            
+            let calcExam = exmMark*(60/100);
+            alert(`exam`)
+            let exmFinal = coursework(test1,test2,cw) + calcExam;
+           // console.log(`Final exam mark is ` +exmFinal);
+           return exmFinal;
+        }
+
+        // accessing the element with ID "exam"
+        var c = document.getElementById('finalMark')
+        c.value = EXAM(test1,test2,CW,finalExam)
+
+
     </script>
     
 </body>
